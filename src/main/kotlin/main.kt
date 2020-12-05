@@ -38,7 +38,9 @@ fun main() {
             else 0.0
 
         val saleWithSummaryDiscount = saleCurrentWithDiscount * (1.0 - melomanDiscount)
-        println("Текущая покупка: $saleCurrent, со скидкой: $saleWithSummaryDiscount")
+        println("Текущая покупка: $saleCurrent,\n" +
+                "    - со скидкой: $saleCurrentWithDiscount,\n" +
+                "    - итого, со скидкой \"меломана\": $saleWithSummaryDiscount")
 
         salesCount++
         salesValue += saleWithSummaryDiscount
